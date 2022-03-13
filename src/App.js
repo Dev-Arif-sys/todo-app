@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import AllTodo from './Component/Dashboard/AllTodo/AllTodo';
+import CompletedTask from './Component/Dashboard/CompletedTask/CompletedTask';
+import Dashboard from './Component/Dashboard/Dashboard';
+import HiddenTask from './Component/Dashboard/HiddenTask/HiddenTask';
+import ContextProvider from './ContextProvider/ContextProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Dashboard></Dashboard>}>
+        <Route path='/' element={<AllTodo></AllTodo>}/>
+        <Route path='/alltodo' element={<AllTodo></AllTodo>}/>
+        <Route path='/completed' element={<CompletedTask></CompletedTask>}/>
+        <Route path='/hidden' element={<HiddenTask></HiddenTask>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
+    </ContextProvider>
   );
 }
 

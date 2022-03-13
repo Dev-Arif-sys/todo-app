@@ -1,0 +1,24 @@
+.dashboard-routes{
+    width: 75%;
+    border-left: 1px solid burlywood;
+}
+.menu-link-list{
+    text-align: center;
+    
+}
+
+.menu-link{
+    text-decoration: none;
+    color: rgb(46, 40, 40);
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+.todo-content{
+    padding: 20px 150px;
+}
+
+#active{
+    font-weight: bolder;
+    color: rgb(185, 185, 8);
+}

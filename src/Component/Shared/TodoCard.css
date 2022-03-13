@@ -1,0 +1,49 @@
+.task-card{
+    border: 1px solid burlywood;
+    padding: 5px 15px;
+    margin: 10px;
+    position: relative;
+}
+.task-card>h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkslategrey;
+
+}
+.task-card>input{
+    padding: 2px;
+    margin: 5px ;
+}
+
+.task-card .status{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(114, 245, 8);
+}
+.delete-btn{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    
+    color: rgb(247, 243, 243);
+    cursor: pointer;
+    background-color: rgb(80, 64, 12);
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+    text-align: center;
+    
+}
+
+.edit-btn{
+    position: absolute;
+    top: 20px;
+    right: 7px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.mark-done-btn{
+    margin-right: 10px;
+}

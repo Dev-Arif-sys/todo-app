@@ -1,0 +1,38 @@
+.add-task{
+    width: 25%;
+   padding: 0 10px;
+   background-color: azure;
+}
+
+.add-task-title{
+    font-size: 1.4rem;
+    color: rgb(44, 44, 53);
+    text-align: center;
+}
+.gen-btn{
+    background-color: brown;
+    padding: 10px 15px;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1.5px solid brown ;
+     
+}
+
+.gen-btn:hover{
+    background-color: transparent;
+    color: black;
+ 
+    transition: .3s;
+}
+
+.add-task-btn{
+    margin-top: 5px;
+}
+.input-task{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
