@@ -35,7 +35,7 @@ const TodoCard = ({task}) => {
     return (
         <div className='task-card'>
             <p  onClick={()=>DeleteTask(task.key)} className='delete-btn'>X</p>
-            <p onClick={()=>HandleEditTask(task)} className='edit-btn'><i class="bi bi-pencil-square"></i></p>
+            <p onClick={()=>HandleEditTask(task)} className='edit-btn'><i className="bi bi-pencil-square"></i></p>
             <p className='status'>{ task?.status}</p>
             {
                 editing?<input onChange={(e)=>SetUpdateTask(e.target.value)} defaultValue={task?.task } />: <h2>{ task?.task}</h2>

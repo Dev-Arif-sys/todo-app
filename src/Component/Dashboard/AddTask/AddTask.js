@@ -4,26 +4,30 @@ import './AddTask.css';
 
 const AddTask = () => {
     const [task,setTask]=useState('')
-    const {tasks,setTasks}=UseValue()
+    const {tasks,setTasks,setDisplayTask}=UseValue()
     
-    console.log(tasks);
 
     // adding task function to add task
      const HandleAddTask=(e)=>{
         //  making the task object
-
-         const taskObj={
-             task,
-             key:Math.floor((1 + Math.random()) * 0x10000)
-             .toString(16)
-             .substring(1) ,
-             status:'todo',
-             visibility:''
-         }
-         console.log(taskObj)
-        //    add the new task into tasks array
-         setTasks([taskObj,...tasks,])
-         setTask('')
+           if(task===""){
+             alert('Add A task first')
+           }else{
+            const taskObj={
+                task,
+                key:Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1) ,
+                status:'todo',
+                visibility:''
+            }
+            
+           //    add the new task into tasks array
+            setTasks([taskObj,...tasks,])
+            setDisplayTask([taskObj,...tasks])
+            setTask('')
+           }
+         
          
          e.preventDefault()
      }
