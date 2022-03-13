@@ -4,6 +4,7 @@ import TodoCard from '../../Shared/TodoCard';
 
 const CompletedTask = () => {
     const {displayTask}=UseValue()
+    
     return (
         <div className='todo-layout'>
            {

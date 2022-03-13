@@ -32,6 +32,7 @@ const AddTask = () => {
          e.preventDefault()
      }
 
+     
     return (
         <div className='add-task'>
           <h5 className='add-task-title'>Add a Task</h5>
